@@ -4,7 +4,7 @@
   <div class="main-container">
     <div class="content-container">
       <div class="content-area">
-
+        Content Area
         <!--global error display-->
         <div class="alert alert-danger" *ngIf="globalErrorMsg">
           <div class="alert-item">
@@ -28,14 +28,15 @@
 
           <section class="nav-group collapsible nav-section">
             <input id="dashboard" type="checkbox">
-            <label for="dashboard" [routerLinkActive]="['active']" class="nav-link" routerLink='dashboard'><clr-icon shape="icon-system-overview" size="16"></clr-icon> <span class="nav-labels">Dashboard</span></label>
+            <label for="dashboard" [routerLinkActive]="['active']" class="nav-link" routerLink='dashboard'>
+              <clr-icon shape="icon-system-overview" size="16"></clr-icon> <span class="nav-labels">Dashboard</span>
+            </label>
             <ul class="nav-list">
               <li [routerLinkActive]="['active']" class="nav-link" routerLink='dashboard/dashboardsystem'>
                 <span class="nav-labels nav-submenu">System</span>
               </li>
             </ul>
           </section>
-
 
         </section>
       </nav>

@@ -20,7 +20,7 @@ export class Product1Component implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-
+    console.log('Product1Component loading....')
   }
 
   ngOnDestroy(): void {

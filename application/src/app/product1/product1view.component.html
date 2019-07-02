@@ -4,25 +4,30 @@
   </li>
 </ul>
 
-
-
 <section aria-labelledby="home-view" role="tabpanel" aria-labelledby="tab1" style="padding-right:20px">
   <div class="row">
     <div class="col-xs-2" *ngFor="let card of cards">
       <a class="card clickable" [routerLink]="card.route" [@flyInOut]="state">
         <div class="card-block">
           <div style="margin:20px">
-            <div style="text-align: center;"><clr-icon [attr.shape]="card.shape" size="32"></clr-icon></div>
-            <div style="text-align: center;">{{card.title}}</div>
+            <div style="text-align: center;">
+              <clr-icon [attr.shape]="card.shape" size="32"></clr-icon>
+            </div>
+            <div style="text-align: center;">{{card.title}} 111</div>
+          </div>
+        </div>
+      </a>
+
+      <a class="card clickable" routerLink="hi" [@flyInOut]="state">
+        <div class="card-block">
+          <div style="margin:20px">
+            <div style="text-align: center;">
+              <clr-icon [attr.shape]="card.shape" size="32"></clr-icon>
+            </div>
+            <div style="text-align: center;">{{card.title}} 222</div>
           </div>
         </div>
       </a>
     </div>
   </div>
 </section>
-
-
-
-
-
-

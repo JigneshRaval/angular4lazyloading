@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
-import {DashboardComponent} from "./dashboard.component";
-import {DashboardsystemComponent} from "./dashboardsystem/dashboardsystem.component";
-import {OverviewComponent} from "./dashboardsystem/overview/overview.component";
+import { DashboardComponent } from "./dashboard.component";
+import { DashboardsystemComponent } from "./dashboardsystem/dashboardsystem.component";
+import { OverviewComponent } from "./dashboardsystem/overview/overview.component";
 
 
 export const DashboardRoutes: Route[] = [
